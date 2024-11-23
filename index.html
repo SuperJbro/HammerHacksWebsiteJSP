@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sigma Inc.</title>
+        <style>
+            img {
+                width: 500px;
+                height: auto;
+            }
+
+            h1 {
+                color: red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>Welcome Sigma.</h1>
+        <p>We are so sigma!!!!!</p>
+
+        <img src="https://t4.ftcdn.net/jpg/02/05/52/07/360_F_205520736_KYlb0YT7F4W6Y8cxhX6LEh3bWtms3gFD.jpg">
+
+        <blockquote>"To sigma or not to sigma, that is a question." -- Super Sigma Guy</blockquote>
+        <button onclick="cycleQ()">Change Quote</button>
+
+        <script>
+            var index = 0;
+
+            function cycleQ() {
+                var quotes = [
+                    `"What is Sigma? Sigma is real and he has Rizzen. -- Sigmor"`,
+                    `"Sometimes I dream of Sigma." -- Epic Sigmor`,
+                    `"Only in SigmOhio, only in SigmOhio." -- Sussy Sigmor`,
+                    `"WHAT THE SIGMA." -- Ligma Sigmor`,
+                ];
+
+                var blockquote = document.querySelector("blockquote");
+                blockquote.innerHTML = quotes[index];
+
+                index++;
+                if (index == quotes.length) {
+                    index = 0;
+                }
+            }
+        </script>
+    </body>
+</html>
